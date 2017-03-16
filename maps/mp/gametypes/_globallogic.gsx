@@ -4,7 +4,7 @@
 
 init()
 {
-	if( getDvar( "g_gametype" ) != "war" && getDvar( "g_gametype" ) != "dm" )
+	if( getDvar( "g_gametype" ) != "dm" && getDvar( "g_gametype" ) != "dom" && getDvar( "g_gametype" ) != "koth" && getDvar( "g_gametype" ) != "sab" && getDvar( "g_gametype" ) != "sd" && getDvar( "g_gametype" ) != "war" )
 		maps\mp\gametypes\_callbacksetup::AbortLevel();
 		
 	// hack to allow maps with no scripts to run correctly
